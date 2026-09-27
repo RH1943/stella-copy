@@ -1,0 +1,22 @@
+.stella-copy-modal { width: min(760px, 94vw); max-height: 90vh; max-height: 90dvh; }
+.stella-copy { overflow-y: auto; min-width: 0; }
+.stella-copy-title { font-size: 1.1em; font-weight: 650; margin: 0 0 6px; overflow-wrap: anywhere; }
+.stella-copy-caption { color: var(--text-muted); font-size: .88em; line-height: 1.55; margin: 6px 0 14px; overflow-wrap: anywhere; }
+.stella-copy-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; margin: 12px 0; font-size: .92em; }
+.stella-copy-field > select, .stella-copy-field > input { width: 100%; min-width: 0; min-height: 36px; }
+.stella-copy-range { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.stella-copy-checks { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 14px 0; }
+.stella-copy-checks label { display: flex; align-items: center; gap: 7px; min-height: 32px; font-size: .9em; }
+.stella-copy-checks input { margin: 0; }
+.stella-copy-preview { width: 100%; height: clamp(170px, 30vh, 360px); min-height: 120px; resize: vertical; white-space: pre-wrap; font-family: var(--font-text); line-height: 1.65; padding: 12px; user-select: text; -webkit-user-select: text; }
+.stella-copy-status { min-height: 1.5em; margin: 10px 0; font-size: .88em; overflow-wrap: anywhere; }
+.stella-copy-warning { color: var(--text-warning, #c98c2d); font-size: .88em; line-height: 1.5; }
+.stella-copy-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.stella-copy-actions button { min-height: 38px; height: auto; white-space: normal; padding: 8px 12px; }
+.stella-copy-clipboard-helper { position: fixed; left: -10000px; top: 0; width: 1px; height: 1px; opacity: 0; }
+@media (max-width: 520px) {
+  .stella-copy-modal { width: 96vw; padding: 16px; }
+  .stella-copy-actions button { flex: 1 1 130px; min-height: 44px; }
+  .stella-copy-field > input, .stella-copy-field > select { min-height: 44px; font-size: 16px; }
+  .stella-copy-preview { font-size: 16px; height: 25vh; }
+}

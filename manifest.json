@@ -1,0 +1,9 @@
+{
+  "id": "stella-copy",
+  "name": "Stella Copy · 스텔라 복사기",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "스텔라 현재 분기의 채팅 전체·번호 범위 복사 및 소설 전체 원문 복사.",
+  "author": "Stella Copy contributors",
+  "isDesktopOnly": false
+}

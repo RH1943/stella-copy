@@ -1,0 +1,21 @@
+{
+  "name": "stella-copy",
+  "version": "1.0.0",
+  "description": "스텔라 채팅 번호 범위 및 소설 전체 원문 복사",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs --watch",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "test": "node tests/run.mjs"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "builtin-modules": "3.3.0",
+    "esbuild": "0.17.3",
+    "obsidian": "latest",
+    "tslib": "2.4.0",
+    "typescript": "5.3.3"
+  }
+}
